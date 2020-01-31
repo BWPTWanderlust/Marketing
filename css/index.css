@@ -1,0 +1,276 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	margin: 5%;
+}
+
+nav > hr {
+	display: none;
+}
+
+.navcontainer  {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	
+}
+
+.navcontainer > nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	padding: 2%;
+}
+
+nav > a {
+	text-decoration: none;
+	color: grey;
+}
+
+nav .logo {
+	display: flex;
+	padding-left: 20px;
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+.headerleft {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2%; 
+	width: 50%;
+}
+
+.headerimage {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+}
+
+.mainheader {
+	font-size: 65px;
+	font-family: 'Bangers';
+	text-align: center;
+	width: 100%;
+}
+
+.getstarted {
+	display: flex;
+	border: solid 1px black;
+	padding: 8px 40px 8px 40px;
+	margin: 5%;
+}
+
+.features {
+	display: flex;
+	margin-right: 43%;
+}
+
+.top-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.left-section {
+	display: flex;
+	flex-direction: column;
+	padding-right: 2%;
+}
+
+.right-section {
+	display: flex;
+	flex-direction: column; 
+}
+
+.middle-img {
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	width: 100%;
+}
+
+.bottom-section {
+	display: flex;
+	flex-direction: row;
+}
+
+.bottom-left {
+	padding-right: 3%;
+}
+
+.bottom-middle {
+	padding-right: 3%;
+}
+
+.breakline {
+	margin: 5% 0% 5% 0%;
+}
+
+.copyright {
+	margin: 3%;
+	text-align: center;
+}
+
+.headerlogo {
+	border: solid;
+}
+
+@media (max-width: 800px) {
+	
+	.headerimage {
+		display: none;
+	}
+
+	.navcontainer {
+		flex-direction: column-reverse;
+	}
+
+	.logo {
+		margin: 3%;
+	}
+
+	.top-section > section {
+		padding: 2%;
+	}
+
+	.bottom-section > section {
+		padding: 2%;
+	}
+}
+
+@media (max-width: 500px) {
+	.headerimage {
+		display: none;
+	}
+
+	.navcontainer > nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav {
+		display: flex;
+		padding: 10%;
+		height: 30vh;
+	}
+
+	nav > a {
+		font-size: 20px;
+	}
+
+	nav > hr {
+		display: block;
+		width: 100%;
+		color: black;
+	}
+
+	.top-section {
+		flex-direction: column;
+	}
+
+	.left-section > h2 {
+		padding-top: 5%;
+	}
+
+	.left-section {
+		margin-bottom: 5%;
+	}
+
+	.right-section > p {
+		margin-bottom: 5%;
+	}
+
+	.bottom-section {
+		flex-direction: column;
+	}
+
+	.bottom-left {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	.bottom-middle {
+		margin-bottom: 5%;
+	}
+
+	.contactheader {
+		margin-top: 8%;
+	}
+	}
+}
