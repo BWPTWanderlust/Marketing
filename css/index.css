@@ -196,24 +196,28 @@ nav .logo {
   border: solid;
   margin: 10% 0% 0% 0%;
 }
-.tour {
+.tour-select .tour {
   display: flex;
   flex-wrap: wrap;
   border: solid;
   margin: 1%;
-  width: 25%;
-  padding: 15rem 5rem;
+  width: 30%;
+  padding: 0rem 5rem 15rem 0rem;
+}
+.tour-select .tour .pic-1 {
+  height: 60%;
 }
 .list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.listitem {
+.list .listitem {
   display: flex;
-  width: 5rem;
   justify-content: center;
 }
-.btn {
-  margin: 0% 8%;
+.list .listitem .tourbtn {
+  margin: 0% 0.5%;
+  width: 4rem;
+  height: 4rem;
 }
