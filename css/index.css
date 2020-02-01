@@ -216,12 +216,20 @@ nav .logo {
 .list .listitem {
   display: flex;
   justify-content: center;
-  border: solid;
   width: 10%;
 }
 .list .listitem .tourbtn {
   margin: 0% 2%;
 }
 .list .listitem .tourbtn button {
-  height: 2rem;
+  height: 4rem;
+  background-image: -webkit-linear-gradient(right, #084f93, #d88144, #ffc357);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.list .listitem .tourbtn button:hover {
+  background-image: -webkit-linear-gradient(left, #084f93, #d88144, #ffc357);
+  border: none;
+  border-radius: 5px;
 }
