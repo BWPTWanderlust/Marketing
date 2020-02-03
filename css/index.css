@@ -226,7 +226,6 @@ footer {
 }
 .tour-select .tour a:hover {
   color: gray;
-  transition: all 0.3s;
 }
 @media (max-width: 500px) {
   .tour-select .tour {
