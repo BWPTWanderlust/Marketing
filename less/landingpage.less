@@ -46,38 +46,30 @@
         }
 
         .pic-1 {
-            height: 60%;
-            width: 115.3%;
+            .pics(60%, 115.3%);
         }
 
         .pic-2 {
-            height: 60%;
-            width: 115.3%;
+            .pics(60%, 115.3%);
         }
 
         .pic-3 {
-            height: 60%;
-            width: 115.3%;
+            .pics(60%, 115.3%);
         }
 
         .pic-4 {
-            height: 60%;
-            width: 115.3%;
+            .pics(60%, 115.3%);
         }
 
         .pic-5 {
-            height: 60%;
-            width: 115.3%;
+            .pics(60%, 115.3%);
         }
 
         .pic-6 {
-            height: 60%;
-            width: 115.3%;
+            .pics(60%, 115.3%);
         }
     }
 }
-
-
 
 .list {
     display: flex;
@@ -98,6 +90,10 @@
                 color: white;
                 border: none;
                 border-radius: 5px;
+
+                @media @mobile {
+                    width: 4rem;
+                }
 
                 &:hover {
                     background-image: -webkit-linear-gradient(left, #084f93, #d88144, #ffc357);
