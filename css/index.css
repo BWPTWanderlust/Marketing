@@ -276,6 +276,11 @@ footer {
   border: none;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .list .listitem .tourbtn button {
+    width: 4rem;
+  }
+}
 .list .listitem .tourbtn button:hover {
   background-image: -webkit-linear-gradient(left, #084f93, #d88144, #ffc357);
   border: none;
