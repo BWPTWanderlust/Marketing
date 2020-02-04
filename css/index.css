@@ -186,6 +186,9 @@ footer {
   text-align: center;
   margin: 4% 0% 0% 0%;
 }
+footer .copyright {
+  margin: 1% 0% 0% 0%;
+}
 * {
   width: 100%;
 }
