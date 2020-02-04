@@ -172,7 +172,12 @@ p {
 @media (max-width: 500px) {
   .navbar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
   }
 }
 nav a {
@@ -185,6 +190,14 @@ nav a {
   padding-left: 15%;
 
 
+}
+@media (max-width: 500px) {
+  nav a {
+    display: flex;
+    margin-right: 10%;
+    margin-top: 5%;
+    justify-content: center;
+  }
 }
 nav a:hover {
   color: gray;
