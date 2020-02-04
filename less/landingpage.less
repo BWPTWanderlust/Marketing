@@ -5,22 +5,45 @@
 .header img {
     max-width: 100%;
     margin-top: 0%;
+
+    @media @mobile {
+        width: 100%;
+    }
 }
 
 .tour-select {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: solid;
     margin: 10% 0% 0% 0%;
+
+    @media @mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        margin: 15% 0% 0% 0%;
+    }
 
     .tour {
         display: flex;
         flex-wrap: wrap;
-        border: solid;
         margin: 1%;
         width: 30%;
         padding: 0rem 5rem 15rem 0rem;
+
+       a {
+           text-decoration: none;
+           color: black;
+            
+           &:hover {
+            color: gray;
+           }
+       }
+
+        @media @mobile {
+            width: 95%;
+        }
 
         .pic-1 {
             height: 60%;
