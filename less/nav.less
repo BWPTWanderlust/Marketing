@@ -1,12 +1,16 @@
 .navbar {
 	display: flex;
-	width: 100%;
+	width: 90%;
 	justify-content: space-between;
     align-items: center;
     margin-top: 2%;
     margin-right: 15%;
     border: solid;
-    /*background-image: linear-gradient(to left, #084f93, #d88144, #ffc357);*/
+    
+    @media @mobile {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 nav a {
