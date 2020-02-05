@@ -250,6 +250,7 @@ footer .copyright {
   left: 43%;
   bottom: 350px;
   padding: 1%;
+  cursor: pointer;
   box-shadow: #000 1px 1px 0, #000 2px 2px 0, #000 3px 3px 0, #000 4px 4px 0, #000 5px 5px 0;
 }
 @media (max-width: 500px) {
@@ -265,7 +266,6 @@ footer .copyright {
   text-align: center;
   font-size: 20px;
   font-family: roboto;
-  cursor: pointer;
   color: white;
 }
 @media (max-width: 500px) {
