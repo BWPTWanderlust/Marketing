@@ -319,6 +319,12 @@ footer .copyright {
 .tour-select .tour a:hover {
   color: gray;
 }
+.tour-select .tour .loc {
+  margin: 2% 0%;
+}
+.tour-select .tour .duration {
+  margin-bottom: 2%;
+}
 @media (max-width: 500px) {
   .tour-select .tour {
     width: 95%;
