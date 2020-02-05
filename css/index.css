@@ -411,3 +411,65 @@ footer .copyright {
     max-width: 100%;
   }
 }
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.container .row {
+  margin-left: 20%;
+}
+@media (max-width: 500px) {
+  .container .row {
+    margin-left: 2%;
+  }
+}
+.container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container .row .column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 10px;
+}
+.container .row .column input[type=text],
+.container .row .column select,
+.container .row .column textarea {
+  width: 250%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+@media (max-width: 500px) {
+  .container .row .column input[type=text],
+  .container .row .column select,
+  .container .row .column textarea {
+    width: 100%;
+  }
+}
+.container .row .column input[type=submit] {
+  background-color: #d88144;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+.container .row .column input[type=submit]:hover {
+  background-color: #084f93;
+}
+@media (max-width: 500px) {
+  .container .row .column input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
