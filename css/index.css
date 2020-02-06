@@ -183,13 +183,17 @@ nav a {
   font-family: helvetica;
   font-size: 18px;
   padding-left: 8%;
+  justify-content: center;
 }
 @media (max-width: 500px) {
-  nav {
+  nav a {
     display: flex;
-    margin-right: 3%;
-    margin-top: 5%;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-right: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
 }
 nav a:hover {
