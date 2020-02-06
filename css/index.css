@@ -384,10 +384,22 @@ footer .copyright {
   border: none;
   border-radius: 5px;
 }
+.galleryHeader {
+  margin-top: 2%;
+  text-align: center;
+  padding: 3%;
+  background-color: #878581;
+}
+.galleryHeader p {
+  font-size: 35px;
+  font-family: Segoe UI;
+  color: white;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  margin-top: 2%;
 }
 .column {
   flex: 25%;
