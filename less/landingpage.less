@@ -1,198 +1,204 @@
 * {
-    width: 100%;
+  width: 100%;
 }
 
 .header img {
-    max-width: 100%;
-    margin-top: 0%;
-    margin-bottom: -15%;
+  max-width: 100%;
+  margin-top: 0%;
+  margin-bottom: -15%;
 
-    @media @mobile {
-        width: 100%;
-    }
+  @media @mobile {
+    width: 100%;
+  }
 }
 
 .headerOverlay {
-    position: relative;
-    display: inline-block;
-    bottom: 300px;
-    color: white;
-    padding-right: 5%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  display: inline-block;
+  bottom: 300px;
+  color: white;
+  padding-right: 5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-    .overlayText {
-        font-size: 50px;
-        margin: 5%;
-        padding: 5%;
-        text-align: center;
+  .overlayText {
+    font-size: 50px;
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
 
-        @media @mobile {
-            font-size: 22px;
-            position: relative;
-            display: inline-block;
-            top: 170px;
-
-        }
+    @media @mobile {
+      font-size: 22px;
+      position: relative;
+      display: inline-block;
+      top: 170px;
     }
+  }
 }
 
 .signUp {
-    background-color: #d88144;
-    width: 175px;
+  background-color: #d88144;
+  width: 175px;
+  position: relative;
+  display: inline-block;
+  left: 43%;
+  bottom: 350px;
+  padding: 1%;
+  cursor: pointer;
+
+  @media @mobile {
     position: relative;
     display: inline-block;
-    left: 43%;
-    bottom: 350px;
-    padding: 1%;
-    cursor: pointer;
+    bottom: 160px;
+    width: 100px;
+    left: 40%;
+  }
+
+  //border: 1px solid black;
+  box-shadow: #000 1px 1px 0, #000 2px 2px 0, #000 3px 3px 0, #000 4px 4px 0,
+    #000 5px 5px 0;
+
+  .signUpButton {
+    text-align: center;
+    font-size: 20px;
+    font-family: roboto;
+
+    color: white;
 
     @media @mobile {
-        position: relative;
-        display: inline-block;
-        bottom: 160px;
-        width: 100px;
-        left: 40%;
+      font-size: 14px;
+      margin-right: 5%;
     }
-    
-    
-    //border: 1px solid black;
-    box-shadow: #000 1px 1px 0,
-                #000 2px 2px 0,
-                #000 3px 3px 0,
-                #000 4px 4px 0,
-                #000 5px 5px 0,;
-          
-    .signUpButton {
-        text-align: center;
-        font-size: 20px;
-        font-family: roboto;
-        
-        color: white;
-
-        @media @mobile {
-            font-size: 14px;
-            margin-right: 5%;
-        }
-    }
+  }
 }
 
 .signUp:hover {
-    background-color: #084f93;
+  background-color: #084f93;
 }
 
 .summary .summaryHeader {
-    margin-top: -10%;
-    font-family: helvetica;
-    font-size: 35px;
-    text-align: center;
+  margin-top: -10%;
+  font-family: helvetica;
+  font-size: 35px;
+  text-align: center;
 }
 
 .summary .summaryContent {
-    font-family: roboto;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 2%;
-    padding-bottom: 4%;
+  font-family: roboto;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2%;
+  padding-bottom: 4%;
 }
 
 .tour-select {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0% 0% 0% 0%;
+
+  @media @mobile {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0% 0% 0% 0%;
+    flex-direction: column;
+    margin: 15% 0% 0% 0%;
+  }
+
+  .tour {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+    width: 30%;
+    padding: 0rem 5rem 15rem 0rem;
+
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        color: gray;
+      }
+    }
+
+    .loc {
+      margin: 2% 0%;
+    }
+
+    .duration {
+      margin-bottom: 2%;
+    }
 
     @media @mobile {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction: column;
-        margin: 15% 0% 0% 0%;
+      width: 95%;
     }
 
-    .tour {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 1%;
-        width: 30%;
-        padding: 0rem 5rem 15rem 0rem;
-
-       a {
-           text-decoration: none;
-           color: black;
-            
-           &:hover {
-            color: gray;
-           }
-       }
-
-       .loc {
-           margin: 2% 0%;
-       }
-
-       .duration {
-           margin-bottom: 2%;
-       }
-
-        @media @mobile {
-            width: 95%;
-        }
-
-        .pic-1 {
-            .pics(60%, 115.3%);
-        }
-
-        .pic-2 {
-            .pics(60%, 115.3%);
-        }
-
-        .pic-3 {
-            .pics(60%, 115.3%);
-        }
-
-        .pic-4 {
-            .pics(60%, 115.3%);
-        }
-
-        .pic-5 {
-            .pics(60%, 115.3%);
-        }
-
-        .pic-6 {
-            .pics(60%, 115.3%);
-        }
+    .pic-1 {
+      .pics(60%, 115.3%);
     }
+
+    .pic-2 {
+      .pics(60%, 115.3%);
+    }
+
+    .pic-3 {
+      .pics(60%, 115.3%);
+    }
+
+    .pic-4 {
+      .pics(60%, 115.3%);
+    }
+
+    .pic-5 {
+      .pics(60%, 115.3%);
+    }
+
+    .pic-6 {
+      .pics(60%, 115.3%);
+    }
+  }
 }
 
 .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .listitem {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    width: 10%;
 
-    .listitem {
-        display: flex;
-        justify-content: center;
-        width: 10%;
+    .tourbtn {
+      margin: 0% 2%;
 
-        .tourbtn {
-            margin: 0% 2%;
+      button {
+        height: 4rem;
+        background-image: -webkit-linear-gradient(
+          right,
+          #084f93,
+          #d88144,
+          #ffc357
+        );
+        color: white;
+        border: none;
+        border-radius: 5px;
 
-            button {
-                height: 4rem;
-                background-image: -webkit-linear-gradient(right, #084f93, #d88144, #ffc357);
-                color: white;
-                border: none;
-                border-radius: 5px;
-
-                @media @mobile {
-                    width: 4rem;
-                }
-
-                &:hover {
-                    background-image: -webkit-linear-gradient(left, #084f93, #d88144, #ffc357);
-                    border: none;
-                    border-radius: 5px;
-                }
-            }
+        @media @mobile {
+          width: 4rem;
         }
+
+        &:hover {
+          background-image: -webkit-linear-gradient(
+            left,
+            #084f93,
+            #d88144,
+            #ffc357
+          );
+          border: none;
+          border-radius: 5px;
+        }
+      }
     }
+  }
 }
