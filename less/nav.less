@@ -9,13 +9,23 @@
         display: flex;
         flex-direction: column;
     }
+
+    .logo {
+
+        @media @mobile {
+            margin-bottom: 3%;
+        }
+
+        @media @tablet {
+            margin-bottom: 3%;
+        }
+    }
 }
 
 nav {
 
     @media @mobile {
         display: flex;
-        
     }
     
     a {
@@ -23,7 +33,7 @@ nav {
 	text-decoration: none;
     display: flex;
 	font-family: helvetica;
-    font-size: 18px;
+    font-size: 1.8rem;
     padding-left: 8%;
     justify-content: center;
 
